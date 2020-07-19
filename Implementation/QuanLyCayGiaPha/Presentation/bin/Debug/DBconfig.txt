@@ -1,0 +1,1 @@
+Server=localhost;Database=QUANLYCAYGIAPHA;Convert Zero Datetime=true;port=3306;User Id=root;password=123456
