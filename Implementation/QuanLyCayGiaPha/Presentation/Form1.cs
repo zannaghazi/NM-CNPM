@@ -20,6 +20,8 @@ namespace Presentation
         public MainBUS mainBus;
         public MemberBUS memberBus;
         public HometownBUS hometownBUS;
+        public JobBUS jobBUS;
+        public RelationshipBUS relationshipBUS;
 
         // Cache the tab control's page
         private TabPage cacheTabChange = null;
@@ -63,6 +65,8 @@ namespace Presentation
             this.mainBus = new MainBUS();
             this.memberBus = new MemberBUS(this.mainBus);
             this.hometownBUS = new HometownBUS(this.mainBus);
+            this.jobBUS = new JobBUS(this.mainBus);
+            this.relationshipBUS = new RelationshipBUS(this.mainBus);
 
             List<ThanhVienVM> allMember = this.memberBus.GetListMember();
             for (int i = 0; i < allMember.Count; i++) {

@@ -10,14 +10,14 @@ namespace BUS
     {
         private MainBUS mainBus;
         private MemberDAO memberDAO;
-        private SystemContrantDAO systemContrantDAO;
         private List<DTO.MemberDTO> data;
+        private JobDAO jobDAO;
 
         public MemberBUS(MainBUS main)
         {
             this.mainBus = main;
             this.memberDAO = new MemberDAO(this.mainBus.GetCommand());
-            this.systemContrantDAO = new SystemContrantDAO(this.mainBus.GetCommand());
+            this.jobDAO = new JobDAO(this.mainBus.GetCommand());
             this.data = this.memberDAO.getAllMember();
 
         }
@@ -29,7 +29,7 @@ namespace BUS
             for (int i = 0; i < this.data.Count; i++)
             {
                 int maNgheNghiep = this.data[i].getMaNgheNghiep();
-                JobDTO ngheNghiep = this.systemContrantDAO.getJobByID(maNgheNghiep);
+                JobDTO ngheNghiep = this.jobDAO.getJobByID(maNgheNghiep);
                 ThanhVienVM temp = new ThanhVienVM(data[i], ngheNghiep);
 
                 result.Add(temp);

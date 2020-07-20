@@ -7,13 +7,42 @@ using System.Text;
 
 namespace DAO
 {
-    public class SystemContrantDAO
+    public class JobDAO
     {
         private MySqlCommand command;
-        
-        public SystemContrantDAO(MySqlCommand command)
+
+        public JobDAO(MySqlCommand command)
         {
             this.command = command;
+        }
+
+        public List<JobDTO> getAllJob()
+        {
+            List<JobDTO> result = new List<JobDTO>();
+
+            string queryString = "SELECT * FROM NGHENGHIEP";
+            this.command.CommandText = queryString;
+
+            using (DbDataReader reader = command.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        JobDTO temp = new JobDTO(
+                            reader.GetInt32(0),
+                            reader.GetString(1),
+                            reader.GetBoolean(2));
+                        result.Add(temp);
+                    }
+                }
+                else
+                {
+                    return result;
+                }
+            }
+
+            return result;
         }
 
         public JobDTO getJobByID(int id)

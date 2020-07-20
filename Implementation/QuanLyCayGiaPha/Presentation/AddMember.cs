@@ -34,6 +34,18 @@ namespace Presentation
             {
                 this.cbHometown.Items.Add(dataQueQuan[i].tenQueQuan);
             }
+            List<NgheNghiepVM> dataNgheNghiep = parent.jobBUS.getAllTenNgheNghiep();
+            for (int i = 0; i < dataNgheNghiep.Count; i++)
+            {
+                this.cbJob.Items.Add(dataNgheNghiep[i].tenNgheNghiep);
+            }
+            this.cbGender.Items.Add("Nam");
+            this.cbGender.Items.Add("Nữ");
+            List<QuanHeVM> dataQuanHe = parent.relationshipBUS.getAllTenQuanHe();
+            for (int  i = 0; i < dataQuanHe.Count; i++)
+            {
+                this.cbRelationship.Items.Add(dataQuanHe[i].tenQuanHe);
+            }
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
