@@ -44,8 +44,8 @@ ALTER TABLE CHITIETTHANHTICH COMMENT 'Chi Tiet Thanh Tich';
 /*==============================================================*/
 CREATE TABLE DIADIEMMAITANG
 (
-   MADD                 INT AUTO_INCREMENT,
-   TENDIADIEMMAITANG    VARCHAR(50),
+   MADIADIEM            INT AUTO_INCREMENT,
+   TENDIADIEM		    VARCHAR(50),
    DAXOA				BOOL,
    PRIMARY KEY (MADD)
 );
@@ -222,7 +222,7 @@ CREATE TABLE THANHVIENMAT
 (
    MATHANHVIEN          INT NOT NULL,
    MANGUYENNHANMAT      INT,
-   MADD                 INT,
+   MADIADIEM            INT,
    NGAYGIOMAT           DATETIME,
    PRIMARY KEY (MATHANHVIEN)
 );
