@@ -25,7 +25,23 @@ namespace BUS
         public List<ViewModels.ThanhVienVM> GetListMember()
         {
             List<ThanhVienVM> result = new List<ThanhVienVM>();
+            this.data = this.memberDAO.getAllMember();
+            for (int i = 0; i < this.data.Count; i++)
+            {
+                int maNgheNghiep = this.data[i].getMaNgheNghiep();
+                JobDTO ngheNghiep = this.jobDAO.getJobByID(maNgheNghiep);
+                ThanhVienVM temp = new ThanhVienVM(data[i], ngheNghiep);
 
+                result.Add(temp);
+            }
+
+            return result;
+        }
+
+        public List<ViewModels.ThanhVienVM> FindMember(string keyword)
+        {
+            List<ThanhVienVM> result = new List<ThanhVienVM>();
+            this.data = this.memberDAO.findMember(keyword);
             for (int i = 0; i < this.data.Count; i++)
             {
                 int maNgheNghiep = this.data[i].getMaNgheNghiep();

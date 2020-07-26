@@ -131,5 +131,39 @@ namespace Presentation
             AddMember addMemberForm = new AddMember(this);
             addMemberForm.ShowDialog();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = this.txtSearch.Text.Trim();
+
+            this.tbMember.Rows.Clear();
+            
+            if (String.IsNullOrEmpty(keyword))
+            {
+                List<ThanhVienVM> Member = this.memberBus.GetListMember();
+                for (int i = 0; i < Member.Count; i++)
+                {
+                    this.tbMember.Rows.Add(
+                        Member[i].hoTen,
+                        Member[i].ngaySinh,
+                        Member[i].gioiTinh,
+                        Member[i].chaMe,
+                        Member[i].ngheNghiep);
+                }
+            }
+            else
+            {
+                List<ThanhVienVM> Member = this.memberBus.FindMember(keyword);
+                for (int i = 0; i < Member.Count; i++)
+                {
+                    this.tbMember.Rows.Add(
+                        Member[i].hoTen,
+                        Member[i].ngaySinh,
+                        Member[i].gioiTinh,
+                        Member[i].chaMe,
+                        Member[i].ngheNghiep);
+                }
+            }
+        }
     }
 }

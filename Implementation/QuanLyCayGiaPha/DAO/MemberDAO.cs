@@ -88,5 +88,42 @@ namespace DAO
 
             return true;
         }
+
+        public List<MemberDTO> findMember(string keyword)
+        {
+            List<MemberDTO> result = new List<MemberDTO>();
+
+            string queryString = "SELECT * FROM THANHVIEN WHERE TENTHANHVIEN LIKE '%" + keyword +"%'";
+            this.command.CommandText = queryString;
+
+            using (DbDataReader reader = command.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        MemberDTO temp = new MemberDTO(
+                            reader.GetInt32(0),
+                            reader.GetInt32(1),
+                            reader.GetInt32(2),
+                            reader.GetInt32(3),
+                            reader.GetString(4),
+                            reader.GetString(5),
+                            reader.GetDateTime(6),
+                            reader.GetBoolean(7),
+                            reader.GetString(8),
+                            reader.GetDateTime(9),
+                            reader.GetBoolean(10),
+                            reader.GetInt32(11));
+                        result.Add(temp);
+                    }
+                }
+                else
+                {
+                    return result;
+                }
+            }
+            return result;
+        }
     }
 }

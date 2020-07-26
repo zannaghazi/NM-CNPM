@@ -40,7 +40,7 @@
             this.tbSearch = new System.Windows.Forms.TabPage();
             this.btnAddMember = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.tbMember = new System.Windows.Forms.DataGridView();
             this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmBirthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,7 +121,7 @@
             // 
             this.tbSearch.Controls.Add(this.btnAddMember);
             this.tbSearch.Controls.Add(this.btnSearch);
-            this.tbSearch.Controls.Add(this.textBox1);
+            this.tbSearch.Controls.Add(this.txtSearch);
             this.tbSearch.Controls.Add(this.tbMember);
             this.tbSearch.Controls.Add(this.label2);
             this.tbSearch.Location = new System.Drawing.Point(4, 22);
@@ -150,13 +150,14 @@
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(990, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtSearch.Location = new System.Drawing.Point(7, 82);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(990, 20);
+            this.txtSearch.TabIndex = 2;
             // 
             // tbMember
             // 
@@ -477,7 +478,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmJob;
         private System.Windows.Forms.Button btnAddMember;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cbReportType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnReport;
