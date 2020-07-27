@@ -14,8 +14,11 @@ namespace Presentation
 {
     public partial class MainForm : Form
     {
+        // Controlled variables
         public bool LOGIN_STATS = false;
         public string username = "";
+
+        private int selectedMemberRow = -1;
 
         public MainBUS mainBus;
         public MemberBUS memberBus;
@@ -77,6 +80,7 @@ namespace Presentation
                     allMember[i].chaMe,
                     allMember[i].ngheNghiep);
             }
+            this.tbMember.ClearSelection();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -128,7 +132,7 @@ namespace Presentation
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            AddMember addMemberForm = new AddMember(this);
+            AddMember addMemberForm = new AddMember(this, 0);
             addMemberForm.ShowDialog();
         }
 
@@ -164,6 +168,23 @@ namespace Presentation
                         Member[i].ngheNghiep);
                 }
             }
+        }
+
+        private void tbMember_SelectionChanged(object sender, EventArgs e)
+        {
+            if (selectedMemberRow == -1)
+            {
+                this.selectedMemberRow = this.tbMember.CurrentCell.RowIndex;
+                return;
+            }
+            this.selectedMemberRow = this.tbMember.CurrentCell.RowIndex;
+            List<DTO.MemberDTO> currentData = this.memberBus.GetCurrentDTO();
+            AddMember viewForm = new AddMember(this, 1, currentData[this.selectedMemberRow]);
+            if (this.LOGIN_STATS == false)
+            {
+                viewForm = new AddMember(this, 2, currentData[this.selectedMemberRow]);
+            }
+            viewForm.ShowDialog();
         }
     }
 }

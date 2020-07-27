@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,20 +46,21 @@
             this.cbJob = new System.Windows.Forms.ComboBox();
             this.cbHometown = new System.Windows.Forms.ComboBox();
             this.cbRelationship = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtBirthday = new System.Windows.Forms.DateTimePicker();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSubmitArchieve = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lbTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÊM THÀNH VIÊN MỚI";
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(170, 32);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(341, 31);
+            this.lbTitle.TabIndex = 0;
+            this.lbTitle.Text = "THÊM THÀNH VIÊN MỚI";
             // 
             // label2
             // 
@@ -170,9 +171,11 @@
             this.txtGeneration.Name = "txtGeneration";
             this.txtGeneration.Size = new System.Drawing.Size(215, 20);
             this.txtGeneration.TabIndex = 15;
+            this.txtGeneration.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGeneration_KeyPress);
             // 
             // cbGender
             // 
+            this.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Location = new System.Drawing.Point(103, 194);
             this.cbGender.Name = "cbGender";
@@ -181,6 +184,7 @@
             // 
             // cbJob
             // 
+            this.cbJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJob.FormattingEnabled = true;
             this.cbJob.Location = new System.Drawing.Point(103, 254);
             this.cbJob.Name = "cbJob";
@@ -189,6 +193,7 @@
             // 
             // cbHometown
             // 
+            this.cbHometown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbHometown.FormattingEnabled = true;
             this.cbHometown.Location = new System.Drawing.Point(103, 164);
             this.cbHometown.Name = "cbHometown";
@@ -197,18 +202,19 @@
             // 
             // cbRelationship
             // 
+            this.cbRelationship.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRelationship.FormattingEnabled = true;
             this.cbRelationship.Location = new System.Drawing.Point(458, 134);
             this.cbRelationship.Name = "cbRelationship";
             this.cbRelationship.Size = new System.Drawing.Size(215, 21);
             this.cbRelationship.TabIndex = 19;
             // 
-            // dateTimePicker1
+            // txtBirthday
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(103, 131);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(266, 20);
-            this.dateTimePicker1.TabIndex = 20;
+            this.txtBirthday.Location = new System.Drawing.Point(103, 131);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.Size = new System.Drawing.Size(266, 20);
+            this.txtBirthday.TabIndex = 20;
             // 
             // btnSave
             // 
@@ -230,14 +236,24 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnSubmitArchieve
+            // 
+            this.btnSubmitArchieve.Location = new System.Drawing.Point(44, 302);
+            this.btnSubmitArchieve.Name = "btnSubmitArchieve";
+            this.btnSubmitArchieve.Size = new System.Drawing.Size(126, 59);
+            this.btnSubmitArchieve.TabIndex = 23;
+            this.btnSubmitArchieve.Text = "Ghi nhận kết thúc";
+            this.btnSubmitArchieve.UseVisualStyleBackColor = true;
+            // 
             // AddMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 384);
+            this.Controls.Add(this.btnSubmitArchieve);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtBirthday);
             this.Controls.Add(this.cbRelationship);
             this.Controls.Add(this.cbHometown);
             this.Controls.Add(this.cbJob);
@@ -255,7 +271,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -267,7 +283,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -285,8 +301,9 @@
         private System.Windows.Forms.ComboBox cbJob;
         private System.Windows.Forms.ComboBox cbHometown;
         private System.Windows.Forms.ComboBox cbRelationship;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtBirthday;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSubmitArchieve;
     }
 }

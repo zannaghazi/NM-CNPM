@@ -54,6 +54,26 @@ namespace BUS
             return result;
         }
 
+        public List<ViewModels.ThanhVienVM> GetListCurrentMember()
+        {
+            List<ThanhVienVM> result = new List<ThanhVienVM>();
+            for (int i = 0; i < this.data.Count; i++)
+            {
+                int maNgheNghiep = this.data[i].getMaNgheNghiep();
+                JobDTO ngheNghiep = this.jobDAO.getJobByID(maNgheNghiep);
+                ThanhVienVM temp = new ThanhVienVM(data[i], ngheNghiep);
+
+                result.Add(temp);
+            }
+
+            return result;
+        }
+
+        public List<MemberDTO> GetCurrentDTO()
+        {
+            return this.data;
+        }
+
         public bool CheckLogin(string username, string password)
         {
             string systemPass = System.IO.File.ReadAllText("UserConfig.txt");

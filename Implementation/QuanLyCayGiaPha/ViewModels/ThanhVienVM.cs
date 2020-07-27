@@ -4,6 +4,7 @@ namespace ViewModels
 {
     public class ThanhVienVM
     {
+        public int ID;
         public int maThanhVien;
         public string hoTen;
         public string ngaySinh;
@@ -13,6 +14,7 @@ namespace ViewModels
 
         public ThanhVienVM(DTO.MemberDTO memberDTO, DTO.JobDTO jobDTO)
         {
+            this.ID = memberDTO.getMaThanhVien();
             this.maThanhVien = memberDTO.getMaThanhVien();
             this.hoTen = memberDTO.getTenThanhVien();
             this.ngaySinh = memberDTO.getNgaySinh().ToString("dd/MM/yyyy");

@@ -26,7 +26,7 @@ namespace DTO
             string thanhvienCu, DateTime ngayPhatSinh, bool gioiTinh, string diaChi, DateTime ngaySinh, bool trangThaiMat, int doi)
         {
             this.maThanhVien = maThanhVien;
-            this.maNgheNghiep = maQueQuan;
+            this.maQueQuan = maQueQuan;
             this.maLoaiQuanHe = maLoaiQuanHe;
             this.maNgheNghiep = maNgheNghiep;
             this.tenThanhVien = tenThanhVien;
@@ -42,7 +42,7 @@ namespace DTO
         public MemberDTO(int maQueQuan, int maLoaiQuanHe, int maNgheNghiep, string tenThanhVien,
             string thanhvienCu, bool gioiTinh, string diaChi, DateTime ngaySinh, bool trangThaiMat, int doi)
         {
-            this.maNgheNghiep = maQueQuan;
+            this.maQueQuan = maQueQuan;
             this.maLoaiQuanHe = maLoaiQuanHe;
             this.maNgheNghiep = maNgheNghiep;
             this.tenThanhVien = tenThanhVien;
