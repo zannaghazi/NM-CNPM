@@ -53,7 +53,6 @@ namespace Presentation
             this.tbMember.Columns[3].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.tbMember.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-
             // NON-LOGIN FORM
             this.cacheTabChange = this.tbChange;
             this.cacheTabReport = this.tbReport;
@@ -76,6 +75,10 @@ namespace Presentation
             this.hometownBUS = new HometownBUS(this.mainBus);
             this.jobBUS = new JobBUS(this.mainBus);
             this.relationshipBUS = new RelationshipBUS(this.mainBus);
+            cbLoaiQuyDinh.SelectedIndex = 0;
+            cbLoaiQuyDinh.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbReportType.SelectedIndex = 0;
+            cbReportType.DropDownStyle = ComboBoxStyle.DropDownList;
 
             List<ThanhVienVM> allMember = this.memberBus.GetListMember();
             for (int i = 0; i < allMember.Count; i++) {
@@ -86,6 +89,7 @@ namespace Presentation
                     allMember[i].chaMe,
                     allMember[i].ngheNghiep);
             }
+
             this.tbMember.ClearSelection();
         }
 
@@ -117,8 +121,9 @@ namespace Presentation
             this.btnLogin.Text = "ĐĂNG XUẤT: " + this.username;
             this.LOGIN_STATS = true;
 
+            this.tabControl.TabPages.Add(this.cacheTabReport); 
             this.tabControl.TabPages.Add(this.cacheTabChange);
-            this.tabControl.TabPages.Add(this.cacheTabReport);
+
 
             this.btnAddMember.Enabled = true;
             this.LOGIN_STATS = true;
@@ -387,6 +392,11 @@ namespace Presentation
         {
             AddConfigForm add_cnfg = new AddConfigForm(this);
             add_cnfg.ShowDialog();
+        }
+
+        private void btnMini_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
