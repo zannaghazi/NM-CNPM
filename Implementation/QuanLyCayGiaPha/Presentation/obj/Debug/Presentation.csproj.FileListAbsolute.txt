@@ -70,3 +70,4 @@ C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.cs
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.csproj.CopyComplete
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.exe
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.AddConfigForm.resources

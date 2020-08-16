@@ -21,5 +21,13 @@ namespace BUS
         {
             return burialLocationDAO.getAll();
         }
+        public bool AddBurialLoc(BurialLocationDTO loc)
+        {
+            if (this.burialLocationDAO.AddBurialLoc(loc))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

@@ -44,5 +44,29 @@ namespace DAO
             
             return result;
         }
+        public bool AddRelationship(RelationshipDTO relationshipDTO)
+        {
+            string tenQuanHe = relationshipDTO.getTenQuanHe();
+
+            string queryString = "INSERT INTO LOAIQUANHE(TENLOAIQUANHE, DAXOA)" +
+                "VALUES('" +
+                tenQuanHe +
+                "', false" + 
+                ")";
+
+            Console.WriteLine(queryString);
+            this.command.CommandText = queryString;
+            try
+            {
+                this.command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return false;
+            }
+
+            return true;
+        }
     }
 }

@@ -37,5 +37,13 @@ namespace BUS
         {
             return this.JobDAO.getAllJob();
         }
+        public bool AddJob(JobDTO job)
+        {
+            if (this.JobDAO.AddJob(job))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

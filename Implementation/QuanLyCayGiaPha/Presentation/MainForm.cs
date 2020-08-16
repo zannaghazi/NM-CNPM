@@ -223,137 +223,170 @@ namespace Presentation
         //          Nghề nghiệp
         //          Nguyên nhân mất
         //          Địa điểm mai táng
-        private void cbLoaiQuyDinh_SelectedIndexChanged(object sender, EventArgs e)
+        public void Load_DiaDiemMaiTang()
         {
             grvAllQuyDinh.Rows.Clear();
             grvAllQuyDinh.Columns.Clear();
+            List<BurialLocationDTO> allBurialLoc = this.burialLocationBUS.getAll();
+
+            grvAllQuyDinh.Columns.Add("MADIADIEMMAITANG", "Mã địa điểm mai táng");
+            grvAllQuyDinh.Columns.Add("TENDIADIEMMAITANG", "Tên địa điểm mai táng");
+
+            this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            for (int i = 0; i < allBurialLoc.Count; i++)
+            {
+                this.grvAllQuyDinh.Rows.Add(
+                    allBurialLoc[i].getMaDiaDiem(),
+                    allBurialLoc[i].getTenDiaDiem());
+            }
+            this.grvAllQuyDinh.ClearSelection();
+        }
+        public void Load_NguyenNhanMat()
+        {
+            grvAllQuyDinh.Rows.Clear();
+            grvAllQuyDinh.Columns.Clear();
+            List<DeathReasonDTO> allDeathReason = this.deathReasonBUS.getAll();
+
+            grvAllQuyDinh.Columns.Add("MANGUYENNHANCHET", "Mã nguyên nhân chết");
+            grvAllQuyDinh.Columns.Add("TENNGUYENNHANCHET", "Tên nguyên nhân chết");
+
+            this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            for (int i = 0; i < allDeathReason.Count; i++)
+            {
+                this.grvAllQuyDinh.Rows.Add(
+                    allDeathReason[i].getMaNguyenNhan(),
+                    allDeathReason[i].getTenNguyenNhan());
+            }
+            this.grvAllQuyDinh.ClearSelection();
+        }
+        public void Load_NgheNghiep()
+        {
+            grvAllQuyDinh.Rows.Clear();
+            grvAllQuyDinh.Columns.Clear();
+            List<JobDTO> allJob = this.jobBUS.getAll();
+
+            grvAllQuyDinh.Columns.Add("MANGHENGHIEP", "Mã nghề nghiệp");
+            grvAllQuyDinh.Columns.Add("TENNGHENGHIEP", "Tên nghề nghiệp");
+
+            this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            for (int i = 0; i < allJob.Count; i++)
+            {
+                this.grvAllQuyDinh.Rows.Add(
+                    allJob[i].getMaNgheNghiep(),
+                    allJob[i].getTenNgheNghiep());
+            }
+            this.grvAllQuyDinh.ClearSelection();
+        }
+        public void Load_QueQuan()
+        {
+            grvAllQuyDinh.Rows.Clear();
+            grvAllQuyDinh.Columns.Clear();
+            List<HometownDTO> allHomeTown = this.hometownBUS.getAll();
+
+            grvAllQuyDinh.Columns.Add("MAQUEQUAN", "Mã quê quán");
+            grvAllQuyDinh.Columns.Add("TENQUEQUAN", "Tên quê quán");
+
+            this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            for (int i = 0; i < allHomeTown.Count; i++)
+            {
+                this.grvAllQuyDinh.Rows.Add(
+                    allHomeTown[i].getMaQueQuan(),
+                    allHomeTown[i].getTenQueQuan());
+            }
+            this.grvAllQuyDinh.ClearSelection();
+        }
+        public void Load_LoaiQuanHe()
+        {
+            grvAllQuyDinh.Rows.Clear();
+            grvAllQuyDinh.Columns.Clear();
+            List<RelationshipDTO> allRel = this.relationshipBUS.getAll();
+
+            grvAllQuyDinh.Columns.Add("MAQUANHE", "Mã quan hệ");
+            grvAllQuyDinh.Columns.Add("TENQUANHE", "Tên quan hệ");
+
+            this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            for (int i = 0; i < allRel.Count; i++)
+            {
+                this.grvAllQuyDinh.Rows.Add(
+                    allRel[i].getMaQuanHe(),
+                    allRel[i].getTenQuanHe());
+            }
+            this.grvAllQuyDinh.ClearSelection();
+        }
+        private void cbLoaiQuyDinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
             this.mainBus = new MainBUS();
             this.relationshipBUS = new RelationshipBUS(this.mainBus);
 
             string loaiQuanHe = cbLoaiQuyDinh.SelectedItem as string;
             if (loaiQuanHe == "Địa điểm mai táng")
             {
-                List<BurialLocationDTO> allBurialLoc = this.burialLocationBUS.getAll();
-
-                grvAllQuyDinh.Columns.Add("MADIADIEMMAITANG", "Mã địa điểm mai táng");
-                grvAllQuyDinh.Columns.Add("TENDIADIEMMAITANG", "Tên địa điểm mai táng");
-
-                this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells; 
-                this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                for (int i = 0; i < allBurialLoc.Count; i++)
-                {
-                    this.grvAllQuyDinh.Rows.Add(
-                        allBurialLoc[i].getMaDiaDiem(),
-                        allBurialLoc[i].getTenDiaDiem());
-                }
-                this.grvAllQuyDinh.ClearSelection();
+                Load_DiaDiemMaiTang();
             }
             if(loaiQuanHe == "Nguyên nhân mất")
             {
-                List<DeathReasonDTO> allDeathReason = this.deathReasonBUS.getAll();
-
-                grvAllQuyDinh.Columns.Add("MANGUYENNHANCHET", "Mã nguyên nhân chết");
-                grvAllQuyDinh.Columns.Add("TENNGUYENNHANCHET", "Tên nguyên nhân chết");
-
-                this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; 
-                this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                for (int i = 0; i < allDeathReason.Count; i++)
-                {
-                    this.grvAllQuyDinh.Rows.Add(
-                        allDeathReason[i].getMaNguyenNhan(),
-                        allDeathReason[i].getTenNguyenNhan());
-                }
-                this.grvAllQuyDinh.ClearSelection();
+                Load_NguyenNhanMat();
             }
             if (loaiQuanHe == "Nghề nghiệp")
             {
-                List<JobDTO> allJob = this.jobBUS.getAll();
-
-                grvAllQuyDinh.Columns.Add("MANGHENGHIEP", "Mã nghề nghiệp");
-                grvAllQuyDinh.Columns.Add("TENNGHENGHIEP", "Tên nghề nghiệp");
-
-                this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-                this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                for (int i = 0; i < allJob.Count; i++)
-                {
-                    this.grvAllQuyDinh.Rows.Add(
-                        allJob[i].getMaNgheNghiep(),
-                        allJob[i].getTenNgheNghiep());
-                }
-                this.grvAllQuyDinh.ClearSelection();
+                Load_NgheNghiep();
             }
             if (loaiQuanHe == "Quê quán")
             {
-                List<HometownDTO> allHomeTown = this.hometownBUS.getAll();
-
-                grvAllQuyDinh.Columns.Add("MAQUEQUAN", "Mã quê quán");
-                grvAllQuyDinh.Columns.Add("TENQUEQUAN", "Tên quê quán");
-
-                this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; 
-                this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-                this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                for (int i = 0; i < allHomeTown.Count; i++)
-                {
-                    this.grvAllQuyDinh.Rows.Add(
-                        allHomeTown[i].getMaQueQuan(),
-                        allHomeTown[i].getTenQueQuan());
-                }
-                this.grvAllQuyDinh.ClearSelection();
+                Load_QueQuan();
             }
             if (loaiQuanHe == "Loại quan hệ")
             {
-                List<RelationshipDTO> allRel = this.relationshipBUS.getAll();
-
-                grvAllQuyDinh.Columns.Add("MAQUANHE","Mã quan hệ");
-                grvAllQuyDinh.Columns.Add("TENQUANHE", "Tên quan hệ"); 
-
-                this.grvAllQuyDinh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; 
-                this.grvAllQuyDinh.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                this.grvAllQuyDinh.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-                this.grvAllQuyDinh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                this.grvAllQuyDinh.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                this.grvAllQuyDinh.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-                for (int i = 0; i < allRel.Count; i++)
-                {
-                    this.grvAllQuyDinh.Rows.Add(
-                        allRel[i].getMaQuanHe(),
-                        allRel[i].getTenQuanHe());
-                }
-                this.grvAllQuyDinh.ClearSelection();
+                Load_LoaiQuanHe();
             }
         }
-        
+
+        private void btnAddNewConfig_Click(object sender, EventArgs e)
+        {
+            AddConfigForm add_cnfg = new AddConfigForm(this);
+            add_cnfg.ShowDialog();
+        }
     }
 }

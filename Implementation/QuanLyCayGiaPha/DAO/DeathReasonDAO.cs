@@ -44,5 +44,29 @@ namespace DAO
 
             return result;
         }
+        public bool AddDeathReason(DeathReasonDTO deathReasonDTO)
+        {
+            string tennguyendochet = deathReasonDTO.getTenNguyenNhan();
+
+            string queryString = "INSERT INTO NGUYENNHANMAT(TENNGUYENNHANMAT, DAXOA)" +
+                "VALUES('" +
+                tennguyendochet +
+                "', false" +
+                ")";
+
+            Console.WriteLine(queryString);
+            this.command.CommandText = queryString;
+            try
+            {
+                this.command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return false;
+            }
+
+            return true;
+        }
     }
 }

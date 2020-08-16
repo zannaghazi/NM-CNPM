@@ -36,5 +36,13 @@ namespace BUS
         {
             return relationshipDAO.getAllRelation();
         }
+        public bool AddRel(RelationshipDTO rel)
+        {
+            if (this.relationshipDAO.AddRelationship(rel))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

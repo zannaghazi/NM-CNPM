@@ -36,5 +36,13 @@ namespace BUS
         {
             return hometownDAO.getAllHomeTown();
         }
+        public bool AddHometown(HometownDTO home)
+        {
+            if (this.hometownDAO.AddHomeTown(home))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

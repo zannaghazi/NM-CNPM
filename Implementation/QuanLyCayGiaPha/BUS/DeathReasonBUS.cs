@@ -21,5 +21,13 @@ namespace BUS
         {
             return this.deathReasonDAO.getAllDeathReason();
         }
+        public bool AddDeathreason(DeathReasonDTO deathreas)
+        {
+            if (this.deathReasonDAO.AddDeathReason(deathreas))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

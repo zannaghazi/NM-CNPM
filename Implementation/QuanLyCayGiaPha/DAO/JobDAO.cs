@@ -71,5 +71,29 @@ namespace DAO
             }
             return result;
         }
+        public bool AddJob(JobDTO jobDTO)
+        {
+            string tennghenghiep = jobDTO.getTenNgheNghiep();
+
+            string queryString = "INSERT INTO NGHENGHIEP(TENNGHENGHIEP, DAXOA)" +
+                "VALUES('" +
+                tennghenghiep +
+                "', false" +
+                ")";
+
+            Console.WriteLine(queryString);
+            this.command.CommandText = queryString;
+            try
+            {
+                this.command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return false;
+            }
+
+            return true;
+        }
     }
 }
