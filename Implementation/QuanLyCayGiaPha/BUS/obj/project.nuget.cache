@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "U6NaMrxUORzdX3oeqZ7c4mFzwS640+Os0Br8kH2GTCDig+VwOiN+4V07Aw/4zZuKx2k1jAjnIuSVE+bfn1YdDQ==",
+  "dgSpecHash": "UJ3LgHu1z1g0l5Lk+inad7I5L/Cq5OEmQGmUqW7gOzdyxN1R/6nsuXeUvjS+jeSycLQFyWWXKw4WUAhmVOETBw==",
   "success": true,
-  "projectFilePath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\BUS.csproj",
+  "projectFilePath": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\BUS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zanna\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\zanna\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

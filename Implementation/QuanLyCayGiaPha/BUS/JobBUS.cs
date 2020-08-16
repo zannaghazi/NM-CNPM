@@ -32,5 +32,10 @@ namespace BUS
 
             return result;
         }
+
+        public List<JobDTO> getAll()
+        {
+            return this.JobDAO.getAllJob();
+        }
     }
 }

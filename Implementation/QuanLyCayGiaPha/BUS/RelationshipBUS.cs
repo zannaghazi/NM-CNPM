@@ -32,5 +32,9 @@ namespace BUS
 
             return result;
         }
+        public List<RelationshipDTO> getAll()
+        {
+            return relationshipDAO.getAllRelation();
+        }
     }
 }

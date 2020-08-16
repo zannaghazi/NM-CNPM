@@ -24,3 +24,29 @@ G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\Vie
 G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\DTO.pdb
 G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\MySql.Data.xml
 G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.csproj.CopyComplete
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\ViewModels.deps.json
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\ViewModels.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\ViewModels.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\DAO.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\DTO.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\MySql.Data.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\Google.Protobuf.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\Zstandard.Net.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\K4os.Compression.LZ4.Streams.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\BouncyCastle.Crypto.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\Ubiety.Dns.Core.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\Renci.SshNet.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\System.Buffers.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\K4os.Compression.LZ4.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\K4os.Hash.xxHash.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\DAO.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\DTO.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\bin\Debug\netstandard2.0\MySql.Data.xml
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.csprojAssemblyReference.cache
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.AssemblyInfoInputs.cache
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.AssemblyInfo.cs
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.csproj.CoreCompileInputs.cache
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.csproj.CopyComplete
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\ViewModels\obj\Debug\netstandard2.0\ViewModels.pdb

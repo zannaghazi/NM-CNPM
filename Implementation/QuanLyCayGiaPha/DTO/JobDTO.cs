@@ -16,7 +16,10 @@ namespace DTO
             this.tenNgheNghiep = tenNgheNghiep;
             this.daXoa = daXoa;
         }
-
+        public int getMaNgheNghiep()
+        {
+            return this.maNgheNghiep;
+        }
         public string getTenNgheNghiep()
         {
             return this.tenNgheNghiep;

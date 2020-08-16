@@ -26,3 +26,31 @@ G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS
 G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\K4os.Hash.xxHash.dll
 G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
 G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\MySql.Data.xml
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\BUS.deps.json
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\BUS.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\BUS.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\DAO.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\DTO.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\MySql.Data.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\ViewModels.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\Google.Protobuf.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\Zstandard.Net.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\K4os.Compression.LZ4.Streams.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\BouncyCastle.Crypto.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\Ubiety.Dns.Core.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\Renci.SshNet.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\System.Buffers.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\K4os.Compression.LZ4.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\K4os.Hash.xxHash.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\DAO.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\DTO.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\ViewModels.pdb
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\bin\Debug\netstandard2.0\MySql.Data.xml
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.csprojAssemblyReference.cache
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.AssemblyInfoInputs.cache
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.AssemblyInfo.cs
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.csproj.CoreCompileInputs.cache
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.csproj.CopyComplete
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.dll
+C:\NM-CNPM\Implementation\QuanLyCayGiaPha\BUS\obj\Debug\netstandard2.0\BUS.pdb

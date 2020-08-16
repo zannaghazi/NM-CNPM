@@ -31,5 +31,10 @@ namespace BUS
 
             return result;
         }
+
+        public List<HometownDTO> getAll()
+        {
+            return hometownDAO.getAllHomeTown();
+        }
     }
 }
