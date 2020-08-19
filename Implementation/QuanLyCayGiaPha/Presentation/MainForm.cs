@@ -17,6 +17,7 @@ namespace Presentation
     {
         // Controlled variables
         public bool LOGIN_STATS = false;
+        public bool IS_START = true;
         public string username = "";
 
         private int selectedMemberRow = -1;
@@ -28,6 +29,7 @@ namespace Presentation
         public RelationshipBUS relationshipBUS;
         public DeathReasonBUS deathReasonBUS;
         public BurialLocationBUS burialLocationBUS;
+        public ArchieveBUS archieveBUS;
 
 
         // Cache the tab control's page
@@ -75,6 +77,7 @@ namespace Presentation
             this.hometownBUS = new HometownBUS(this.mainBus);
             this.jobBUS = new JobBUS(this.mainBus);
             this.relationshipBUS = new RelationshipBUS(this.mainBus);
+            this.archieveBUS = new ArchieveBUS(this.mainBus);
             cbLoaiQuyDinh.SelectedIndex = 0;
             cbLoaiQuyDinh.DropDownStyle = ComboBoxStyle.DropDownList;
             cbReportType.SelectedIndex = 0;
@@ -149,6 +152,7 @@ namespace Presentation
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            this.IS_START = true;
             string keyword = this.txtSearch.Text.Trim();
 
             this.tbMember.Rows.Clear();
@@ -179,15 +183,24 @@ namespace Presentation
                         Member[i].ngheNghiep);
                 }
             }
+            this.tbMember.ClearSelection();
         }
 
         private void tbMember_SelectionChanged(object sender, EventArgs e)
         {
-            if (selectedMemberRow == -1)
+            int index = this.tbMember.CurrentCell.RowIndex;
+            if (index == this.selectedMemberRow)
             {
-                this.selectedMemberRow = this.tbMember.CurrentCell.RowIndex;
+                this.selectedMemberRow = -1;
                 return;
             }
+            this.selectedMemberRow = index;
+            if (IS_START)
+            {
+                this.IS_START = false;
+                return;
+            }
+            
             this.selectedMemberRow = this.tbMember.CurrentCell.RowIndex;
             List<DTO.MemberDTO> currentData = this.memberBus.GetCurrentDTO();
             AddMember viewForm = new AddMember(this, 1, currentData[this.selectedMemberRow]);
@@ -195,6 +208,7 @@ namespace Presentation
             {
                 viewForm = new AddMember(this, 2, currentData[this.selectedMemberRow]);
             }
+            this.tbMember.ClearSelection();
             viewForm.ShowDialog();
         }
         private void Load_grvLoaiQuanHe()

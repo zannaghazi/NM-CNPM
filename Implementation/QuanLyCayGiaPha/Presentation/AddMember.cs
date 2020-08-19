@@ -208,15 +208,20 @@ namespace Presentation
                 {
                     string message = "Thêm thành viên " + newMem.getTenThanhVien() + " thành công!";
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
                 else
                 {
                     string message = "Thêm thành viên " + newMem.getTenThanhVien() + " thất bại!";
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }else
+            }else if (this.formMode == this.VIEW_MODE)
             {
-                // Open 
+                AddArchieve addArchieve = new AddArchieve(this.data, this.parent)
+                {
+                    StartPosition = FormStartPosition.CenterParent
+                };
+                addArchieve.ShowDialog();
             }
         }
         private bool ValidationData()

@@ -71,3 +71,5 @@ C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.cs
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.exe
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.pdb
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.AddConfigForm.resources
+G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.AddConfigForm.resources
+G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.AddArchieve.resources

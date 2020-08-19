@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddArchieve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddArchieve.Designer.cs">
+      <DependentUpon>AddArchieve.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddConfigForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddArchieve.resx">
+      <DependentUpon>AddArchieve.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddConfigForm.resx">
       <DependentUpon>AddConfigForm.cs</DependentUpon>
     </EmbeddedResource>

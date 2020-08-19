@@ -1,35 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj": {}
+    "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj": {}
   },
   "projects": {
-    "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj": {
+    "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj",
+        "projectUniqueName": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj",
         "projectName": "DAO",
-        "projectPath": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj",
-        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
-        "outputPath": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\obj\\",
+        "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj",
+        "packagesPath": "C:\\Users\\zanna\\.nuget\\packages\\",
+        "outputPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj"
+              "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj": {
+                "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj"
               }
             }
           }
@@ -60,29 +59,28 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj": {
+    "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj",
+        "projectUniqueName": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
-        "outputPath": "C:\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\obj\\",
+        "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\zanna\\.nuget\\packages\\",
+        "outputPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -116,7 +114,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

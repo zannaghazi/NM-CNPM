@@ -40,5 +40,9 @@ namespace DTO
         {
             return this.tenThanhTich;
         }
+        public DateTime getNgayPhatSinh()
+        {
+            return this.ngayPhatSinh;
+        }
     }
 }
