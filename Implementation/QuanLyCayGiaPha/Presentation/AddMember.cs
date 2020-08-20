@@ -257,5 +257,14 @@ namespace Presentation
                 e.Handled = true;
             }
         }
+
+        private void btnSubmitArchieve_Click(object sender, EventArgs e)
+        {
+            DeathRecord deathRecord = new DeathRecord(this.data, this.parent)
+            {
+                StartPosition = FormStartPosition.CenterParent
+            };
+            deathRecord.ShowDialog();
+        }
     }
 }

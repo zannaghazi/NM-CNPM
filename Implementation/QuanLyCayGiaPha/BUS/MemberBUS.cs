@@ -93,5 +93,17 @@ namespace BUS
             }
             return false;
         }
+
+        public bool AdjustMemberStatus(MemberDTO member)
+        {
+            if (this.memberDAO.AdjustMemberStatus(member))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }    
+        }
     }
 }

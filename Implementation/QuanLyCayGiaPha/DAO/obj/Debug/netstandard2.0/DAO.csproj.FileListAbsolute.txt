@@ -46,3 +46,27 @@ C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.cspro
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.csproj.CopyComplete
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.dll
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.pdb
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\DAO.deps.json
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\DAO.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\DAO.pdb
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\DTO.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\MySql.Data.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\Google.Protobuf.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\Zstandard.Net.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\BouncyCastle.Crypto.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\Ubiety.Dns.Core.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\Renci.SshNet.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\System.Buffers.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\K4os.Compression.LZ4.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\K4os.Hash.xxHash.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\DTO.pdb
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\bin\Debug\netstandard2.0\MySql.Data.xml
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.csprojAssemblyReference.cache
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.AssemblyInfoInputs.cache
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.AssemblyInfo.cs
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.csproj.CopyComplete
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DAO\obj\Debug\netstandard2.0\DAO.pdb

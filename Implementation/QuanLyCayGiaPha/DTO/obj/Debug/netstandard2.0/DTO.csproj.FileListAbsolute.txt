@@ -16,3 +16,12 @@ C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.Assem
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.csproj.CoreCompileInputs.cache
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.dll
 C:\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.pdb
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\bin\Debug\netstandard2.0\DTO.deps.json
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\bin\Debug\netstandard2.0\DTO.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\bin\Debug\netstandard2.0\DTO.pdb
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.csprojAssemblyReference.cache
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.AssemblyInfo.cs
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.dll
+C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\DTO\obj\Debug\netstandard2.0\DTO.pdb

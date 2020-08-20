@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aUVk5Z0JgGkcHr0x559DvisMbeoDaGevVkz+O6gmWeSJgclvo5vrZLX9OsOhL+fBlrfYMcRfaNILVJoqbRQiPQ==",
+  "dgSpecHash": "ARg8+bhdNi9nrGqRbdnVjKHu8Bw4bC7fl9VgCaJ05v+ttuFZofL+sJWYeQ3JR9DXNLSe/HGiwQWI+ReUm/LZyg==",
   "success": true,
-  "projectFilePath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj",
+  "projectFilePath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zanna\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\zanna\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Thanh Thien\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Thanh Thien\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

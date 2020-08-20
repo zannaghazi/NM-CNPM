@@ -125,5 +125,24 @@ namespace DAO
             }
             return result;
         }
+
+        public bool AdjustMemberStatus(MemberDTO member)
+        {
+            string queryString = "UPDATE THANHVIEN SET TRANGTHAIMAT = TRUE " +
+                "WHERE MATHANHVIEN = " + member.getMaThanhVien().ToString();
+
+            Console.WriteLine(queryString);
+            this.command.CommandText = queryString;
+            try
+            {
+                this.command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return false;
+            }
+            return true;
+        }
     }
 }

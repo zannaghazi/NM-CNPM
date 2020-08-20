@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DVRGKH0s+cX5tYDQLgzuuv3LzLMXZbuAwXTTcWUoY8THkmRQd+ZAyNnKBYhEsF8fxxFxB0AroYxNRwwL/um2OQ==",
+  "dgSpecHash": "9FQ75GbKVxRC+krviDlbOAjYI4C2lcPejlxxC8A1RZMD+jIq49ZNJeeq63/y7v0IGeAaPpGHochJmmYOCnooCg==",
   "success": true,
-  "projectFilePath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\ViewModels\\ViewModels.csproj",
+  "projectFilePath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\ViewModels\\ViewModels.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zanna\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\zanna\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Thanh Thien\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Thanh Thien\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

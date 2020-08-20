@@ -244,6 +244,7 @@
             this.btnSubmitArchieve.TabIndex = 23;
             this.btnSubmitArchieve.Text = "Ghi nhận kết thúc";
             this.btnSubmitArchieve.UseVisualStyleBackColor = true;
+            this.btnSubmitArchieve.Click += new System.EventHandler(this.btnSubmitArchieve_Click);
             // 
             // AddMember
             // 

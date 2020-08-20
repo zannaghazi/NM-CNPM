@@ -16,6 +16,19 @@ namespace BUS
             burialLocationDAO = new BurialLocationDAO(this.main.GetCommand());
         }
 
+        public List<string> getListBurialLocationName()
+        {
+            List<string> result = new List<string>();
+
+            List<BurialLocationDTO> data = this.burialLocationDAO.getAll();
+
+            for (int i = 0; i < data.Count; i++)
+            {
+                result.Add(data[i].getTenDiaDiem());
+            }
+
+            return result;
+        }
 
         public List<BurialLocationDTO> getAll()
         {
