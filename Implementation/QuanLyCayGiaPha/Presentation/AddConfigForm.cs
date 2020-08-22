@@ -134,6 +134,7 @@ namespace Presentation
                     }
                 }
             }
+            this.Close();
         }
     }
 }

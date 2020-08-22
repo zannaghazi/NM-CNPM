@@ -57,7 +57,7 @@ namespace DAO
         public bool AddMember(MemberDTO member)
         {
             string maQueQuan = member.getMaQueQuan().ToString();
-            string maLoaiQuanHe = member.getMaQueQuan().ToString();
+            string maLoaiQuanHe = member.getMaQuanHe().ToString();
             string maNgheNghiep = member.getMaNgheNghiep().ToString();
 
 

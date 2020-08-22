@@ -208,6 +208,7 @@ namespace Presentation
                 {
                     string message = "Thêm thành viên " + newMem.getTenThanhVien() + " thành công!";
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.parent.AddMemberCallBack();
                     this.Close();
                 }
                 else

@@ -17,6 +17,7 @@ namespace Presentation
     {
         // Controlled variables
         public bool LOGIN_STATS = false;
+        public bool IS_RESET = true;
         public bool IS_START = true;
         public string username = "";
 
@@ -83,17 +84,11 @@ namespace Presentation
             cbReportType.SelectedIndex = 0;
             cbReportType.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            List<ThanhVienVM> allMember = this.memberBus.GetListMember();
-            for (int i = 0; i < allMember.Count; i++) {
-                this.tbMember.Rows.Add(
-                    allMember[i].hoTen,
-                    allMember[i].ngaySinh,
-                    allMember[i].gioiTinh,
-                    allMember[i].chaMe,
-                    allMember[i].ngheNghiep);
-            }
+            this.loadAllMember();
 
             this.tbMember.ClearSelection();
+
+            this.IS_START = false;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -144,17 +139,38 @@ namespace Presentation
             this.username = "";
         }
 
+        private void loadAllMember()
+        {
+            List<ThanhVienVM> Member = this.memberBus.GetListMember();
+            this.tbMember.ClearSelection();
+            this.tbMember.Rows.Clear();
+            
+            for (int i = 0; i < Member.Count; i++)
+            {
+                this.tbMember.Rows.Add(
+                    Member[i].hoTen,
+                    Member[i].ngaySinh,
+                    Member[i].gioiTinh,
+                    Member[i].chaMe,
+                    Member[i].ngheNghiep);
+            }
+            
+        }
+        public void AddMemberCallBack()
+        {
+            this.loadAllMember();
+        }
         private void btnAddMember_Click(object sender, EventArgs e)
         {
+            this.IS_RESET = true;
             AddMember addMemberForm = new AddMember(this, 0);
             addMemberForm.ShowDialog();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            this.IS_START = true;
+            this.IS_RESET = true;
             string keyword = this.txtSearch.Text.Trim();
-
             this.tbMember.Rows.Clear();
             
             if (String.IsNullOrEmpty(keyword))
@@ -189,15 +205,16 @@ namespace Presentation
         private void tbMember_SelectionChanged(object sender, EventArgs e)
         {
             int index = this.tbMember.CurrentCell.RowIndex;
+            Console.WriteLine(index);
             if (index == this.selectedMemberRow)
             {
                 this.selectedMemberRow = -1;
                 return;
             }
             this.selectedMemberRow = index;
-            if (IS_START)
+            if (IS_RESET || IS_START)
             {
-                this.IS_START = false;
+                this.IS_RESET = false;
                 return;
             }
             
@@ -411,6 +428,16 @@ namespace Presentation
         private void btnMini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            this.loadAllMember();
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

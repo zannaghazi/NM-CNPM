@@ -235,19 +235,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thanh Thien\\.nuget\\packages\\": {}
+    "C:\\Users\\zanna\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\BUS.csproj",
+      "projectUniqueName": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\BUS.csproj",
       "projectName": "BUS",
-      "projectPath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\BUS.csproj",
-      "packagesPath": "C:\\Users\\Thanh Thien\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\obj\\",
+      "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\BUS.csproj",
+      "packagesPath": "C:\\Users\\zanna\\.nuget\\packages\\",
+      "outputPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\BUS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Thanh Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -260,14 +260,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj": {
-              "projectPath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj"
+            "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj": {
+              "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DAO\\DAO.csproj"
             },
-            "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj"
+            "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj": {
+              "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\DTO\\DTO.csproj"
             },
-            "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\ViewModels\\ViewModels.csproj": {
-              "projectPath": "C:\\Users\\Thanh Thien\\OneDrive\\Desktop\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\ViewModels\\ViewModels.csproj"
+            "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "G:\\Giáo trình online\\năm 6\\NM CNPM\\NM-CNPM\\Implementation\\QuanLyCayGiaPha\\ViewModels\\ViewModels.csproj"
             }
           }
         }
@@ -298,7 +298,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

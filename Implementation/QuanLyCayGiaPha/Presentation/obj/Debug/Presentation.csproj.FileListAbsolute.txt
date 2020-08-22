@@ -112,3 +112,4 @@ C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\Pre
 C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.exe
 C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.pdb
 C:\Users\Thanh Thien\OneDrive\Desktop\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.DeathRecord.resources
+G:\Giáo trình online\năm 6\NM CNPM\NM-CNPM\Implementation\QuanLyCayGiaPha\Presentation\obj\Debug\Presentation.DeathRecord.resources
