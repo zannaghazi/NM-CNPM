@@ -103,5 +103,10 @@ namespace DTO
         {
             return this.maThanhVien;
         }
+
+        public void changeTrangThaiMat()
+        {
+            this.trangThaiMat = true;
+        }
     }
 }

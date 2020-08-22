@@ -70,6 +70,9 @@ namespace Presentation
             //Thêm vào cơ sở dữ liệu
             else if (this.parent.deathReasonBUS.AddDeathMember(data) && this.parent.memberBus.AdjustMemberStatus(this.member))
             {
+                //Vì dữ liệu trong database đã thay đổi, nhưng chỉ có 1 biến nên cập nhật lại cả 1 form thì quá tiêu tốn tài nguyên
+                //nên ta chủ động thay đổi dữ liệu trên mainform
+                this.member.changeTrangThaiMat();
                 MessageBox.Show("Ghi nhận thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
